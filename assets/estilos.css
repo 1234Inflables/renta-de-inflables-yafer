@@ -406,4 +406,63 @@ nav ul {
     grid-template-columns: 1fr; /* 1 columna en lugar de varias */
   }
 }
+/* Estilo normal (pantallas grandes) */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Estilo especial para pantallas pequeñas (celular) */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;   /* uno debajo de otro */
+    align-items: center;      /* centrados */
+    gap: 10px;
+  }
+
+  nav {
+    text-align: center;
+  }
+}
+/* Estilo del encabezado rojo */
+header {
+  background-color: red;
+  padding: 20px 10px;   /* espacio arriba/abajo y a los lados */
+  display: flex;
+  align-items: center;  /* centra verticalmente */
+  justify-content: space-between; /* separa logo y menú */
+  flex-wrap: wrap; /* permite que los elementos bajen si no caben */
+}
+
+/* El logo y el texto */
+header img {
+  height: 60px;   /* agranda el logo */
+  margin-right: 10px;
+}
+
+/* El menú de navegación */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;  /* permite que salten de línea si no caben */
+}
+
+/* Ajuste especial en pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;  /* logo arriba, menú abajo */
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column; /* menú en columna */
+    gap: 10px;
+  }
+}
 
