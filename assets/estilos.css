@@ -502,7 +502,7 @@ header {
   max-width: 100%;
   background: red;
   margin: 0;
-  padding: 15px;
+  padding: 15px 190px;
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
