@@ -465,4 +465,50 @@ header nav ul {
     gap: 10px;
   }
 }
+/* ----- ENCABEZADO ----- */
+header {
+  background-color: red;
+  padding: 20px 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;   /* permite que los enlaces bajen a otra fila si no caben */
+  justify-content: center; /* centra los enlaces */
+  gap: 10px; /* espacio entre enlaces */
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/* ----- PIE DE PÁGINA ----- */
+footer {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  position: relative; 
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+/* ----- RESPONSIVE PARA CELULAR ----- */
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column; /* menú en columna en pantallas chicas */
+    align-items: center;
+  }
+
+  footer {
+    font-size: 14px; /* texto un poco más chico en móvil */
+  }
+}
 
