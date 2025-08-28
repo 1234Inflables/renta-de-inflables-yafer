@@ -426,15 +426,6 @@ nav ul {
     text-align: center;
   }
 }
-/* Estilo del encabezado rojo */
-header {
-  background-color: red;
-   padding: 50px 100px;   /* espacio arriba/abajo y a los lados */
-  display: flex;
-  align-items: center;  /* centra verticalmente */
-  justify-content: space-between; /* separa logo y menú */
-  flex-wrap: wrap; /* permite que los elementos bajen si no caben */
-}
 
 /* El logo y el texto */
 header img {
@@ -465,14 +456,6 @@ header nav ul {
     gap: 10px;
   }
 }
-/* ----- ENCABEZADO ----- */
-header {
-  background-color: red;
-   padding: 50px 80px;;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 header nav {
   display: flex;
   flex-wrap: wrap;   /* permite que los enlaces bajen a otra fila si no caben */
