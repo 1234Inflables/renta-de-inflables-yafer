@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inflables YAFER | Preguntas Frecuentes</title>
+  <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+  <style>
+  body {
+  background-color: #408ee0; /* azul bajo elegante */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background-color:  #ff0000e7; /* amarillo */
+  padding: 15px 20px;
+  text-align: center;
+}
+header nav a {
+  color: #000; /* negro para contrastar con el amarillo */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: #FF5722; /* un naranja cuando pasas el mouse */
+}
+
+</style>
+  <header>
+     <div class="logo">Inflables <span>YAFER</span></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="galeria.html">Galería</a>
+      <a href="Preguntas.html">Preguntas Frecuentes</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Inflables Yafer </h1>
+    
+    <!-- Preguntas Frecuentes -->
+    <section class="faq">
+      <h2>Preguntas frecuentes </h2>
+      <h1>“Para cualquier duda, estoy a tus órdenes.” </h1>
+      <div class="faq-item">
+        <button class="faq-question">¿Cómo reservo un inflable?</button>
+        <div class="faq-answer">
+          <p>Puedes reservar enviándonos un mensaje por WhatsApp o desde la página de contacto.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Incluye instalación?</button>
+        <div class="faq-answer">
+          <p>Sí, todos nuestros inflables incluyen instalación profesional sin costo adicional.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Hacen sanitización?</button>
+        <div class="faq-answer">
+          <p>Claro, todos los inflables se sanitizan antes y después de cada evento.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">¿Cuál es la zona de cobertura?</button>
+        <div class="faq-answer">
+          <p>Morelos </p>
+          <p>Ejemplo: Cuautla,Yecapixtla,Atlatlaucan,Ocuituco, ect...........</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opiniones -->
+    <section class="opiniones">
+      <h2>Opiniones de clientes</h2>
+      <div class="opiniones-grid">
+        <div class="opinion-card">
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p>"Llegaron puntuales y los niños no pararon de brincar. ¡Súper recomendados!"</p>
+          <small>— Karla M.</small>
+        </div>
+        <div class="opinion-card">
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p>"Muy limpios y seguros. La comunicación por WhatsApp fue rapidísima."</p>
+          <small>— Jorge R.</small>
+        </div>
+        <div class="opinion-card">
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+          <p>"El combo fiesta valió cada peso. ¡Los volveré a contratar!"</p>
+          <small>— Erika L.</small>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Inflables YAFER</p>
+  </footer>
+
+  <script>
+    // Script para abrir/cerrar preguntas frecuentes
+    document.querySelectorAll(".faq-question").forEach(btn => {
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        const answer = btn.nextElementSibling;
+        answer.style.display = answer.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
+</body>
+</html>
