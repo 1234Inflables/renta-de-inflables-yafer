@@ -267,7 +267,7 @@ footer {
 }
 .cards {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* 3 columnas */
+  grid-template-columns: repeat(4, 1fr); /* 3 columnas */
   gap: 25px;
   justify-items: center;
 }
@@ -388,4 +388,22 @@ footer {
   color: #666;
 }
 
+/* Diseño general (computadora) */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Diseño celular */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* 1 columna en lugar de varias */
+  }
+}
 
